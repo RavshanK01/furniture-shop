@@ -37,6 +37,20 @@
         color: rgba(54, 56, 56, 0.9033);
         line-height: 22px;
     }
+    &__list-link--active {
+        padding-bottom: 4px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            border-radius: 1px;
+            background: rgba($title-color, .7);
+        }
+    }
 }
 
 //RightSide-Menu
@@ -422,6 +436,28 @@
         font-size: 24px;
         line-height: 38px;
         @extend %title__font;
+    }
+}
+
+//  About Page
+.breadcrumbs {
+    background: rgba(#DFDFDF, .5);
+    padding: 13px 14px;
+    &__list {
+        display: flex;
+    }
+    &__item::after {
+        content: '/';
+        margin-left: -4px;
+        margin-right: 4px;
+    }
+    &__item:last-child::after {
+        display: none;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: 400;
+        color: $default-color;
     }
 }
 
