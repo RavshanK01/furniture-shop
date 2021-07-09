@@ -9,6 +9,7 @@
   "author": "Vadym Prokopchuk",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "github:fancyapps/fancybox",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
